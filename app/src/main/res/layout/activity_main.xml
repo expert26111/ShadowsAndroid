@@ -1,72 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawer_layout"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:weightSum="1">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom"
+        android:id="@+id/clockwise"
 
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_weight="0.20"
+        android:onClick="clockwise"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom"
+        android:id="@+id/fade"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_weight="0.20"
+        android:onClick="fade"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zoom"
+        android:id="@+id/button"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_weight="0.30"
+        android:onClick="zoom"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/circle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background ="#FAFAFA"
-        android:weightSum="1">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.0585"
-            android:background="#ECEFF1"
-            android:elevation="4dp"
-            android:orientation="horizontal"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            android:weightSum="1"
-            app:titleTextColor="#55000000"
-            app:contentInsetLeft="80dp"
-            app:contentInsetStart="80dp">
-
-        </android.support.v7.widget.Toolbar>
-
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.03" />
-
-
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.9115"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-
-            <FrameLayout
-
-                android:id="@+id/frameLayout"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
-
-            </FrameLayout>
-
-
-        </LinearLayout>
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="0.10"
+        android:src="@drawable/novipel_4" />
 
 
 
 
 
-
-
-    </LinearLayout>
-
-
+    <Space
+        android:background="#0000ff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        />
 
 </LinearLayout>
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionManager xmlns:android="http://schemas.android.com/apk/res/android">
+    <transition
+
+        android:fromScene="@layout/welcome_window_4"
+        android:toScene="@layout/welcome_window"
+        android:transition="@transition/my_transition" />
+
+</transitionManager>
